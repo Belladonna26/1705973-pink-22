@@ -1,0 +1,38 @@
+.advantages {
+ margin-bottom: 50px;
+ padding-bottom: 282px;
+
+ text-align: center;
+
+ background-image: url("../img/screen-smile.png"), url("../img/iphone-mockup.png");
+ background-repeat: no-repeat;
+ background-position: center bottom -7px, center bottom -43px;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__title {
+  margin: 0 0 24px 0;
+  @include font(18px, 24px);
+  font-weight: 700;
+
+  color: $black;
+}
+
+.advantages__text {
+  margin: 0 0 43px 0;
+  @include font(14px, 24px);
+  font-weight: 400;
+
+  color: $ebony-clay;
+}
+
+

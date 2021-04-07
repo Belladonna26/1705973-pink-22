@@ -1,0 +1,20 @@
+.page-footer {
+ text-align: center;
+}
+
+.page-footer__logo-color {
+  margin-bottom: 41px;
+
+  fill: $ebony-clay;
+    &:hover {
+      fill: $cerise-red;
+    }
+    &:active {
+      fill: $ebony-clay-30;
+    }
+}
+
+.page-footer__social {
+  margin-bottom: 41px;
+}
+

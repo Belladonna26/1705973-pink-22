@@ -1,10 +1,24 @@
-:root {
 $white: #FFFFFF;
 $white-30: rgba(255, 255, 255, 0.3);
-$concrete : #F2F2F2;
+$concrete: #F2F2F2;
 $ebony-clay: #283645;
+$ebony-clay-10: rgba(40, 54, 69, 0.1);
 $ebony-clay-30: rgba(40, 54, 69, 0.3);
+$ebony-clay-60: rgba(40, 54, 69, 0.6);
 $black: #000000;
-$cerise-red : #D22856;
+$black-30: rgba(0, 0, 0, 0.3);
+$cerise-red: #D22856;
 $cerise-red-30: rgba(210, 40, 86, 0.3);
+$mirage: #1D2631;
+$mercury: #E5E5E5;
+
+// Viewports
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width: 320px;
+// Viewports end
+
+@mixin font($font-size: 14px, $line-height: 14px) {
+  font-size: $font-size;
+  line-height: $line-height;
 }
