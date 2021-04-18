@@ -1,0 +1,29 @@
+.button {
+  min-width: 276px;
+  min-height: 59px;
+
+  margin-bottom: 46px;
+
+  background-color: $jungle-green;
+  border: 2px solid $jungle-green;
+  border-radius: 1px;
+  box-sizing: border-box;
+  outline: none;
+
+  @include font(18px, 30px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+
+    &:hover {
+      background-color: $eucalyptus;
+    }
+    &:active {
+      color: $white-30;
+    }
+    &:disabled {
+      background-color: $mercury;
+      border: 2px solid $mercury;
+    }
+}

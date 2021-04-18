@@ -32,3 +32,11 @@
       fill: $white-30;
     }
 }
+
+@media screen and (min-width: $desktop-width) {
+.page-header__mobile-buttons {
+  max-width: 150px;
+  padding: 0;
+  background-color: transparent;
+ }
+}

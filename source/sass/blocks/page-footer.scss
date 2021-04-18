@@ -1,5 +1,6 @@
 .page-footer {
  text-align: center;
+ padding: 66px 0 40px 0;
 }
 
 .page-footer__logo-color {
@@ -18,3 +19,21 @@
   margin-bottom: 41px;
 }
 
+@media screen and (min-width:$tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width:$tablet-width) and (max-width:$desktop-width) {
+  .page-footer {
+    padding: 0 20px 40px 20px;
+  }
+}
+
+@media screen and (min-width:$desktop-width) {
+  .page-footer {
+    padding: 0 130px 75px 130px;
+  }
+}

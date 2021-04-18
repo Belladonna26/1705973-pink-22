@@ -1,0 +1,36 @@
+.top-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 171px;
+  background-image: url('../img/back-mobile.png');
+  background-repeat: no-repeat;
+  
+}
+
+@media screen and (min-width:$mobile-width) {
+  .top-background {
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width:$mobile-width) and (max-width: $tablet-width) {
+  .top-background {
+    background-image: url('../img/back-tablet.png');
+    background-position-y: -110px;
+
+  }
+}
+
+@media screen and (min-width:$tablet-width) {
+  .top-background {
+    width: 100%;
+    min-height: 394px;
+    padding-left: 95px;
+    padding-right: 95px;
+    box-sizing: border-box;
+    background-image: url('../img/back-desktop.png');
+  }
+}

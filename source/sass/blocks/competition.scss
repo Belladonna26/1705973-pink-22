@@ -1,0 +1,100 @@
+.competition {
+  padding-top: 54px;
+}
+
+.competition__user-wrapper {
+  margin-right: 22px;
+}
+
+.competition__condition {
+  margin: 0 0 55px 0;
+  text-align: center;
+  font-weight: 400;
+  @include font(14px, 30px);
+}
+
+.competition__condition_hidden {
+  display: none;
+}
+
+.competition__submit {
+  text-align: center;
+}
+
+.competition__submit-requirement {
+  margin: 0;
+}
+
+@media screen and (min-width:$tablet-width) {
+  .competition__user-wrapper {
+    display: flex;
+    align-items: baseline;
+    margin-right: 0;
+  }
+  .competition__user {
+    border: none;
+  }
+  .competition__submit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .competition__condition_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .competition__condition {
+    font-size: 18px;
+  }
+  br {
+    display: none;
+  }
+  .competition__condition_hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width:$mobile-width) and (max-width:$tablet-width) {
+  .competition__user-data {
+    width: auto;
+  }
+}
+
+@media screen and (min-width:$tablet-width) and (max-width:$desktop-width) {
+  .competition {
+    padding-left: 22px;
+    padding-right: 22px;
+   }
+   .competition__user {
+     margin-bottom: 21px;
+   }
+   .competition__user-data {
+    width: 100%;
+  }
+  .competition__condition {
+    width: 490px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:$desktop-width) {
+  .competition {
+    padding: 0 132px;
+  }
+  .competition__user-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+
+    width: 433px;
+    margin-right: 0;
+  }
+  .competition__condition {
+    width: 756px;
+    margin-top: 100px;
+  }
+}
+
+
+
+
+

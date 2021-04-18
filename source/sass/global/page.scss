@@ -6,9 +6,34 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  padding-bottom: 40px;
 
   font-family: "Open Sans", "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.page__title {
+  text-align: center;
+
+  margin: 0;
+
+  @include font(24px, 32px);
+  font-weight: 300;
+  color: $white;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page__title {
+    @include font(50px, 68px);
+ }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page__title {
+    width: 747px;
+    margin-top: 74px;
+ }
+  br {
+    display:  none;
+ }
 }

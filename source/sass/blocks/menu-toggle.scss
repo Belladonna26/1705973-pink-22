@@ -9,3 +9,9 @@
 .menu-toggle__show {
   display: block;
 }
+
+@media screen and (min-width: $desktop-width) {
+  .menu-toggle {
+    display: none;
+  }
+}
