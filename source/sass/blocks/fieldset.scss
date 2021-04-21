@@ -1,75 +1,8 @@
 .fieldset {
   margin: 0;
-  padding: 42px 0 44px 0;
-
+  padding: 42px 22px;
   box-sizing: border-box;
   border: none;
-}
-
-.fieldset_padding {
-  padding-top: 0;
-}
-
-.fieldset_colored {
-  background-color: $concrete;
-}
-
-.fieldset__title {
-  margin: 0;
-  text-align: center;
-  @include font(14px, 18px);
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $cerise-red;
-}
-
-.fieldset__title_margin {
-  margin-bottom: 22px;
-}
-
-.fieldset__title_colored {
-  margin-bottom: 42px;
-}
-
-.fieldset__title_hidden {
-  display: none;
-}
-
-@media screen and (min-width:$tablet-width) {
-  .fieldset {
-    margin-bottom: 51px;
-    padding-top: 44px;
-    padding-left: 60px;
-    padding-right: 60px;
-    height: auto;
-    border: 2px solid $mercury;
-    border-radius: 1px;
-  }
-  .fieldset_colored {
-    background-color: $white;
-  }
-  .fieldset__title_hidden {
-    display: block;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .fieldset__title {
-    line-height: 30px;
-  }
-  .fieldset__title_device {
-    display: none;
-  }
-  .fieldset__field .contact-label {
-    order: 2;
-  }
-  .fieldset__area {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-  .fieldset__field {
-    position: relative;
-  }
 }
 
 .fieldset__list {
@@ -78,20 +11,56 @@
   list-style: none;
 }
 
-.fieldset__area {
-  min-width: 276px;
-  min-height: 197px;
+.fieldset__item {
+  margin-bottom: 47px;
+    &:last-child {
+      margin-bottom: 0;
+  }
+}
 
-  margin: 0 0 8px 22px;
-  padding: 22px 20px;
+.fieldset_colored {
+  background-color: $concrete;
+}
+
+.fieldset__field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin-bottom: 29px;
+    &:last-child {
+      margin-bottom: 0;
+  }
+}
+
+.fieldset__title {
+  @include font(14px, 18px);
+
+  margin-top: 0;
+  margin-bottom: 44px;
+
+  text-align: center;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $cerise-red;
+}
+
+.fieldset__title_display {
+  display: none;
+}
+
+.fieldset__area {
+  @include font(18px, 30px);
+
+  width: 276px;
+  height: 197px;
+  padding: 23px 20px;
   box-sizing: border-box;
 
   border: 2px solid $mercury;
   border-radius: 1px;
   outline: none;
-
   font-family: "Open Sans", "Roboto", sans-serif;
-  @include font(18px, 30px);
   font-weight: 400;
   color: $ebony-clay;
     &:hover {
@@ -105,72 +74,188 @@
     }
 }
 
-@media screen and (min-width:$tablet-width) and (max-width:$desktop-width) {
-  .fieldset__field {
-    display: flex;
-    flex-direction: column;
-    &::after {
-      position: absolute;
-      top: 10px;
-      right: 0;
-      width: 59px;
-      height: 59px;
-      background-color: $mercury;
-      content: "";
-    }
-  }
-  .fieldset__field .contact-label {
-    margin-left: 22px;
 
-  }
-  .fieldset__field .contact-label_margin {
-    margin-bottom: 30px;
-  }
-  .fieldset__field .text-field {
-    margin-bottom: 17px;
-    margin-left: 0;
-  }
-}
 
-@media screen and (min-width:$desktop-width) {
-  .fieldset_contact {
-    display: flex;
-    column-gap: 74px;
 
-    padding-bottom: 10px;
-    padding-top: 13px;
-  }
 
-  .fieldset__field .text-field {
-    width: 371px;
-    margin-top: 0;
-  }
-  .fieldset__field .contact-label {
-    margin-bottom: 0;
-  }
-  .fieldset__list_achievements {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 45px;
-    row-gap: 37px;
-  }
 
-  .fieldset__list_achievements .input-checkbox {
-    margin-left: 0;
-  }
-  .fieldset__area {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-  .fieldset__field::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 59px;
-      height: 59px;
-      background-color: $mercury;
-      content: "";
-    }
-  }
+
+
+
+// TRASH
+// .fieldset {
+//   margin: 0;
+//   padding: 42px 0 44px 0;
+
+//   box-sizing: border-box;
+//   border: none;
+// }
+
+// .fieldset_no-padding {
+//   padding-top: 0;
+// }
+
+// .fieldset_colored {
+//   background-color: $concrete;
+// }
+
+// .fieldset__title {
+//   margin: 0;
+//   text-align: center;
+//   @include font(14px, 18px);
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   color: $cerise-red;
+// }
+
+// .fieldset__title_margin {
+//   margin-bottom: 22px;
+// }
+
+// .fieldset__title_colored {
+//   margin-bottom: 42px;
+// }
+
+// .fieldset__title_hidden {
+//   display: none;
+// }
+
+// @media screen and (min-width:$tablet-width) {
+//   .fieldset {
+//     margin-bottom: 51px;
+//     padding-top: 44px;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//     height: auto;
+//     border: 2px solid $mercury;
+//     border-radius: 1px;
+//   }
+//   .fieldset_colored {
+//     background-color: $white;
+//   }
+//   .fieldset__title_hidden {
+//     display: block;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+//   .fieldset__title {
+//     line-height: 30px;
+//   }
+//   .fieldset__title_device {
+//     display: none;
+//   }
+//   .fieldset__field .contact-label {
+//     order: 2;
+//   }
+//   .fieldset__area {
+//     width: 100%;
+//     margin-left: 0;
+//     margin-bottom: 0;
+//   }
+//   .fieldset__field {
+//     position: relative;
+//   }
+// }
+
+// .fieldset__list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .fieldset__area {
+//   min-width: 276px;
+//   min-height: 197px;
+
+//   margin: 0 0 8px 22px;
+//   padding: 22px 20px;
+//   box-sizing: border-box;
+
+//   border: 2px solid $mercury;
+//   border-radius: 1px;
+//   outline: none;
+
+//   font-family: "Open Sans", "Roboto", sans-serif;
+//   @include font(18px, 30px);
+//   font-weight: 400;
+//   color: $ebony-clay;
+//     &:hover {
+//       border: 2px solid $ebony-clay;
+//     }
+//     &:active {
+//       border: 2px solid $cerise-red;
+//     }
+//     &:focus {
+//       border: 2px solid $cerise-red;
+//     }
+// }
+
+// @media screen and (min-width:$tablet-width) and (max-width:$desktop-width) {
+//   .fieldset__field {
+//     display: flex;
+//     flex-direction: column;
+//     &::after {
+//       position: absolute;
+//       top: 10px;
+//       right: 0;
+//       width: 59px;
+//       height: 59px;
+//       background-color: $mercury;
+//       content: "";
+//     }
+//   }
+//   .fieldset__field .contact-label {
+//     margin-left: 22px;
+
+//   }
+//   .fieldset__field .contact-label_margin {
+//     margin-bottom: 30px;
+//   }
+//   .fieldset__field .text-field {
+//     margin-bottom: 17px;
+//     margin-left: 0;
+//   }
+// }
+
+// @media screen and (min-width:$desktop-width) {
+//   .fieldset_contact {
+//     display: flex;
+//     column-gap: 74px;
+
+//     padding-bottom: 10px;
+//     padding-top: 13px;
+//   }
+
+//   .fieldset__field .text-field {
+//     width: 371px;
+//     margin-top: 0;
+//   }
+//   .fieldset__field .contact-label {
+//     margin-bottom: 0;
+//   }
+//   .fieldset__list_achievements {
+//     display: flex;
+//     flex-wrap: wrap;
+//     column-gap: 45px;
+//     row-gap: 37px;
+//   }
+
+//   .fieldset__list_achievements .input-checkbox {
+//     margin-left: 0;
+//   }
+//   .fieldset__area {
+//     width: 100%;
+//     height: auto;
+//     margin-left: 0;
+//   }
+//   .fieldset__field::after {
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       width: 59px;
+//       height: 59px;
+//       background-color: $mercury;
+//       content: "";
+//     }
+//   }
 

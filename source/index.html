@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page_index" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
 <body class="page__body">
   <h1 class="visually-hidden">Pink - приложение, которое поднимает настроение!</h1>
   <header class="page-header">
-    <div class="page-header__mobile-buttons">
+    <div class="page-header__menu-buttons">
       <a class="page-header__logo" aria-label="Главная страница">
         <svg class="page-header__logo-icon" width="74" height="23" viewBox="0 0 74 23" fill="currentColor"
           aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -35,22 +35,20 @@
       <h2 class="visually-hidden">Пользовательская навигация</h2>
 
       <div class="container">
-        <div class="main-navigation-wrapper">
           <ul class="main-navigation__list main-navigation__list_closed">
-            <li class="main-navigation__item main-navigation__item_desktop">
+            <li class="main-navigation__item">
               <a class="main-navigation__link main-navigation__link_current">Главная</a>
             </li>
-            <li class="main-navigation__item main-navigation__item_desktop">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="photos.html">Фотографии</a>
             </li>
-            <li class="main-navigation__item main-navigation__item_desktop">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="form.html">Конкурс</a>
             </li>
-            <li class="main-navigation__item main-navigation__item_desktop">
+            <li class="main-navigation__item">
               <a class="main-navigation__link" href="https://htmlacademy.ru/study">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </div>
     </nav>
 
@@ -60,8 +58,7 @@
           <h2 class="visually-hidden">Сайты, откуда вы можете скачать приложение Pink</h2>
           <p class="promo__slogan">Взгляните на жизнь<br>иначе!</p>
         </div>
-        <!-- <img class="promo__mockup" src="img/mockup.png" width="320" height="286" alt="Айфон 7 в руке"> -->
-        <div class="promo__mobile-wrapper">
+        <div class="promo__download-buttons-wrapper">
           <a class="button-rounded promo__download-button" href="https://www.apple.com/ru/shop">Скачать приложение</a>
           <div class="promo__buttons">
             <a href="https://www.apple.com/ru/shop" aria-label="App Store">
@@ -80,14 +77,14 @@
     </section>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page__main">
 
-    <div class="offer">
+    <div class="offer page__offer">
       <p class="offer__text">Устали от серости мегаполиса?</p>
       <p class="offer__text">Нам есть, что вам предложить!</p>
     </div>
 
-    <section class="advantages sliced-back">
+    <section class="advantages page__advantages sliced-back">
       <h2 class="visually-hidden">Преимущества приложения Pink</h2>
       <div class="container">
         <ul class="advantages__list">
@@ -112,7 +109,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials page__testimonials">
       <h2 class="visually-hidden">Отзывы о приложении</h2>
       <div class="container">
         <div class="testimonials__list">
@@ -133,7 +130,7 @@
       </div>
     </section>
 
-    <section class="sub sliced-back">
+    <!-- <section class="sub sliced-back">
       <h2 class="visually-hidden">Тарифы для приложения Pink</h2>
       <div class="container">
         <div class="table-wrap">
@@ -215,8 +212,86 @@
           <button class="slider-control" type="button"></button>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <section class="sub sliced-back">
+      <h2 class="visually-hidden">Тарифы для приложения Pink</h2>
+      <div class="sub__tariffs-wrapper">
+      <table class="tariffs">
+      <caption class="visually-hidden">Наши тарифы</caption>
+
+      <thead class="tariffs__head">
+        <tr class="tariffs__row">
+          <th class="tariffs__header tariffs__header_border tariffs__header_left-corner">
+            База
+            <span class="tariffs__header-price">1,99 USD</span>
+          </th>
+          <th class="tariffs__header tariffs__header_border">
+            Стандарт
+            <span class="tariffs__header-price">3,99 USD</span>
+          </th>
+          <th class="tariffs__header tariffs__header_right-corner">
+            Анлим
+            <span class="tariffs__header-price">9,99 USD</span>
+          </th>
+        </tr>
+      </thead>
+
+        <tbody>
+          <tr class="tariffs__row">
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Розовый фильтр</span>
+              <img src="img/yes.svg" width="31" height="21" alt="Доступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Розовый фильтр</span>
+              <img src="img/yes.svg" width="31" height="21" alt="Доступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Розовый фильтр</span>
+              <img src="img/yes.svg" width="31" height="21" alt="Доступный бонус">
+            </td>
+          </tr>
+
+          <tr class="tariffs__row">
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Смайлики</span>
+              <img src="img/no.svg" width="27" height="27" alt="Недоступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Смайлики</span>
+              <img src="img/yes.svg" width="27" height="27" alt="Доступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Смайлики</span>
+              <img src="img/yes.svg" width="27" height="27" alt="Доступный бонус">
+            </td>
+          </tr>
+
+          <tr class="tariffs__row">
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Комментарии</span>
+              <img src="img/no.svg" width="27" height="27" alt="Недоступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Комментарии</span>
+              <img src="img/no.svg" width="27" height="27" alt="Недоступный бонус">
+            </td>
+            <td class="tariffs__data">
+              <span class="tariffs__filter tariffs__filter_hidden">Комментарии</span>
+              <img src="img/yes.svg" width="31" height="21" alt="Доступный бонус">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sub__controls slider-controls">
+      <button class="slider-control" type="button"></button>
+      <button class="slider-control slider-control_current" type="button"></button>
+      <button class="slider-control" type="button"></button>
+    </div>
+  </div>
+  </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
@@ -233,15 +308,15 @@
           </div>
           <div class="contacts__type-info">
             <p class="contacts__type-title">Приезжайте в гости:</p>
-            <p class="contacts__type-text">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__type-text">ул. Большая<br> Конюшенная, 19/8</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map">
+    <section class="map page__map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe class="map-image"
+      <iframe class="map__image"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300266!2d30.320858715486793!3d59.93871916905491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616873718396!5m2!1sru!2sru"
         width="320" height="200" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         allowfullscreen=""></iframe>
@@ -249,7 +324,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page__footer-inner container">
       <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Главная страница">
         <svg class="page-footer__logo-color" width="145" height="40" viewBox="0 0 145 40" fill="currentColor"
           aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -288,7 +363,7 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           <svg class="copyright__logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
             aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">

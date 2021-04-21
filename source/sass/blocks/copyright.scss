@@ -1,13 +1,14 @@
 .copyright {
   display: flex;
-  justify-content: center;
   align-items: center;
   column-gap: 15px;
 }
 
 .copyright__text {
-  margin: 0;
   @include font(14px, 18px);
+  
+  margin: 0;
+
   font-weight: 400;
   color: $ebony-clay;
 }

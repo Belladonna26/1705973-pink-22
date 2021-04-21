@@ -1,13 +1,14 @@
 .contacts {
   text-align: center;
   position: relative;
-  padding-bottom: 25px;
+  padding-top: 44px;
+  padding-bottom: 22px;
    &::before {
     display: block;
     position: absolute;
     bottom: -28px;
     width: 100%;
-    height: 91px;
+    height: 63px;
     background-image: url("../img/triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -19,24 +20,30 @@
 
 .contacts__subtitle {
   @include font(24px, 28px);
+
+  margin-top: 0;
+  margin-bottom: 31px;
   color: $ebony-clay;
 }
 
 .contacts__type-info {
-  margin-bottom: 32px;
+  margin-bottom: 17px;
 }
 
 .contacts__type-title {
-  margin: 0 0 13px 0;
   @include font(18px, 24px);
+
+  margin: 0 0 4px 0;
+
   font-weight: 700;
   color: $ebony-clay;
 }
 
 .contacts__type-text {
+  @include font(24px, 32px);
+  
   margin: 0;
   text-decoration: none;
 
-  @include font(24px, 32px);
   color: $cerise-red;
 }

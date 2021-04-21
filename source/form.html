@@ -13,7 +13,7 @@
   <header class="page-header">
     <nav class="main-navigation">
       <h2 class="visually-hidden">Пользовательская навигация</h2>
-      <div class="page-header__mobile-buttons">
+      <div class="page-header__menu-buttons">
         <a class="page-header__logo" aria-label="Главная страница">
           <svg class="page-header__logo-icon" width="74" height="23" viewBox="0 0 74 23" fill="currentColor"
             aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -52,41 +52,42 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page__main">
     <div class="top-background">
       <h2 class="page__title">Конкурс на самое<br> безбашенное<br> путешествие с Пинк</h2>
     </div>
+
     <form class="competition" action="https://echo.htmlacademy.ru">
-      <div class="competition__condition_wrapper">
-      <p class="competition__condition">Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на
-        вашу бонусную карту!<span class="competition__condition_hidden">Пожалуйста, заполните форму ниже:</span></p>
+      <div class="competition__condition-wrapper">
+        <p class="competition__condition">Поделитесь своей историей и получите<br> шанс выиграть ценный приз — 1000<br> миль на
+          вашу бонусную карту!<span class="competition__condition_display">Пожалуйста, заполните форму ниже:</span></p>
       </div>
 
-      <fieldset class="fieldset fieldset_padding competition__user">
+      <fieldset class="fieldset competition__user">
         <legend class="visually-hidden">ФИО пользователя</legend>
-        <div class="competition__user-wrapper">
-          <label class="contact-label" for="user-surname">Фамилия</label>
-          <input class="competition__user-data text-field" type="text" name="surname" id="user-surname"
+        <div class="fieldset__field">
+          <label class="info-label" for="user-surname">Фамилия</label>
+          <input class="info-input fieldset__field-data" type="text" name="surname" id="user-surname"
             placeholder="Укажите фамилию *" required>
         </div>
 
-        <div class="competition__user-wrapper">
-          <label class="contact-label" for="user-name">Имя</label>
-          <input class="competition__user-data text-field" type="text" name="name" id="user-name" placeholder="Введите ваше имя *"
+        <div class="fieldset__field">
+          <label class="info-label" for="user-name">Имя</label>
+          <input class="info-input fieldset__field-data" type="text" name="name" id="user-name" placeholder="Введите ваше имя *"
             required>
         </div>
 
-        <div class="competition__user-wrapper margin-off">
-          <label class="contact-label" for="user-patronymic">Отчество</label>
-          <input class="competition__user-data text-field text-field_margin" type="text" name="patronymic" id="user-patronymic"
+        <div class="fieldset__field">
+          <label class="info-label" for="user-patronymic">Отчество</label>
+          <input class="info-input fieldset__field-data" type="text" name="patronymic" id="user-patronymic"
             placeholder="Ну и отчество тоже">
         </div>
       </fieldset>
 
-      <fieldset class="fieldset fieldset_colored">
-        <legend class="fieldset__title_hidden fieldset__title">Ваши безбашенные достижения в путешествии</legend>
-        <h3 class="fieldset__title fieldset__title_colored fieldset__title_device">Ваши безбашенные<br>достижения в путешествии</h3>
-        <ul class="fieldset__list fieldset__list_achievements">
+      <fieldset class="fieldset fieldset_colored competition__achievements">
+        <legend class="fieldset__title fieldset__title_display">Ваши безбашенные достижения в путешествии</legend>
+        <h3 class="fieldset__title">Ваши безбашенные<br>достижения в путешествии</h3>
+        <ul class="fieldset__list">
           <li class="fieldset__item">
             <div class="input-checkbox">
               <input class="input-checkbox__control visually-hidden" type="checkbox" id="selfie" name="achievements"
@@ -151,22 +152,22 @@
         </ul>
       </fieldset>
 
-      <fieldset class="fieldset fieldset_contact">
-        <legend class="fieldset__title_hidden fieldset__title">Контактная информация</legend>
+      <fieldset class="fieldset competition__contact">
+        <legend class="fieldset__title fieldset__title_display">Контактная информация</legend>
         <div class="fieldset__field">
-          <label class="contact-label contact-label_margin contact-label_phone-icon" for="tel">Номер телефона</label>
-          <input class="text-field test" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+          <label class="info-label" for="tel">Номер телефона</label>
+          <input class="info-input fieldset__field-data" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
         </div>
 
-      <div class="fieldset__field margin-off">
-        <label class="contact-label contact-label_letter-icon" for="email">Адрес почты</label>
-        <input class="text-field" type="email" id="email" name="email" placeholder="Введите почту *" required>
+      <div class="fieldset__field">
+        <label class="info-label" for="email">Адрес почты</label>
+        <input class="info-input fieldset__field-data" type="email" id="email" name="email" placeholder="Введите почту *" required>
       </div>
       </fieldset>
 
       <fieldset class="fieldset fieldset_colored">
-        <legend class="fieldset__title_hidden fieldset__title">С каким приложением путешествовали?</legend>
-        <h3 class="fieldset__title fieldset__title_colored fieldset__title_device">С каким приложением путешествовали?</h3>
+        <legend class="fieldset__title fieldset__title_display">С каким приложением путешествовали?</legend>
+        <h3 class="fieldset__title">С каким приложением путешествовали?</h3>
         <ul class="fieldset__list">
           <li class="fieldset__item">
             <div class="input-radio">
@@ -200,9 +201,9 @@
         </ul>
       </fieldset>
 
-      <fieldset class="fieldset fieldset_padding fieldset_review">
-        <legend class="fieldset__title_hidden fieldset__title">Опишите свои эмоции</legend>
-        <h3 class="fieldset__title fieldset__title_margin fieldset__title_device">Опишите свои эмоции</h3>
+      <fieldset class="fieldset competition__review">
+        <legend class="fieldset__title fieldset__title_display">Опишите свои эмоции</legend>
+        <h3 class="fieldset__title">Опишите свои эмоции</h3>
         <textarea class="fieldset__area" name="review" id="review-field">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
 
@@ -211,8 +212,10 @@
         <p class="competition__submit-requirement"><span class="star">*</span> — обязательные поля</p>
       </div>
     </form>
+
   </main>
   <footer class="page-footer">
+    <div class="page__footer-inner container">
       <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Главная страница">
         <svg class="page-footer__logo-color" width="145" height="40" viewBox="0 0 145 40" fill="currentColor"
           aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -250,18 +253,17 @@
         </ul>
       </div>
 
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Сайт HTML Academy">
-            <svg class="copyright__logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
-              aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
-            </svg>
-          </a>
-        </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <svg class="copyright__logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor"
+            aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+          </svg>
+        </a>
       </div>
+    </div>
   </footer>
 
   <section class="modal modal_fail">

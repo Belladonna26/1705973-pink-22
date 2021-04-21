@@ -1,11 +1,19 @@
 .page-footer {
- text-align: center;
- padding: 66px 0 40px 0;
+  padding: 40px 0 40px 0;
+}
+
+.page__footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  display: flex;
+  margin-bottom: 41px;
 }
 
 .page-footer__logo-color {
-  margin-bottom: 41px;
-
   fill: $ebony-clay;
     &:hover {
       fill: $cerise-red;
@@ -16,7 +24,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 41px;
+  margin-bottom: 37px;
 }
 
 @media screen and (min-width:$tablet-width) {

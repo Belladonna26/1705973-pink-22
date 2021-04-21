@@ -1,9 +1,9 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
-@import "global/page.scss";
 @import "global/visually-hidden.scss";
 
-
+@import "blocks/page/page.scss";
+@import "blocks/page/page_index.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/menu-toggle.scss";
@@ -22,16 +22,19 @@
 @import "blocks/top-background.scss";
 @import "blocks/page-main.scss";
 
-@import "blocks/fieldset.scss";
 @import "blocks/competition.scss";
+@import "blocks/fieldset.scss";
+
 
 @import "blocks/input-checkbox.scss";
 @import "blocks/input-radio.scss";
 @import "blocks/margin-off.scss";
-@import "blocks/text-field.scss";
-@import "blocks/contact-label.scss";
+@import "blocks/info-input.scss";
+@import "blocks/info-label.scss";
 @import "blocks/button.scss";
+@import "blocks/star.scss";
 
 @import "blocks/sliced-back.scss";
+@import "blocks/tariffs.scss";
 
 @import "blocks/modal.scss";

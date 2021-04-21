@@ -1,4 +1,4 @@
-.page-header__mobile-buttons {
+.page-header__menu-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 // Добавить этот класс к бургеру или кнопке закрыть с js
-.page-header__mobile-buttons_active {
+.page-header__menu-buttons_active {
   background-color: $ebony-clay;
   box-shadow: 0px 1px 0px #000000,
               inset 0px 1px 0px rgba(255, 255, 255, 0.15);
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-.page-header__mobile-buttons {
+.page-header__menu-buttons {
   max-width: 150px;
   padding: 0;
   background-color: transparent;
