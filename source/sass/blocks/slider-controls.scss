@@ -3,6 +3,10 @@
   column-gap: 19px;
   align-items: baseline;
   justify-content: center;
+
+  @media screen and (min-width:$desktop-width) {
+    display: none;
+  }
 }
 
 .slider-control {

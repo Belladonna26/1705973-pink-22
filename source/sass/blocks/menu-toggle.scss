@@ -1,13 +1,11 @@
 .menu-toggle {
-  display: none;
-
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.menu-toggle__show {
-  display: block;
+.menu-toggle_display{
+  display: none;
 }
 
 @media screen and (min-width: $desktop-width) {
