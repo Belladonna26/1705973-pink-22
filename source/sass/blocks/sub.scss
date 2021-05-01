@@ -1,160 +1,29 @@
 .sub {
-  padding-top: 27px;
   padding-bottom: 49px;
- }
+  padding-top: 40px;
 
- .table-wrap {
-   overflow-x: auto;
-   width: 100%;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 98px;
+  }
+}
 
-   margin-bottom: 45px;
- }
+.sub__tariffs-wrapper {
+  width: 100%;
+  margin-bottom: 45px;
+  overflow-x: auto;
 
- .sub__table {
-   text-align: center;
-   border-collapse: collapse;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 
-   background-color: $white;
- }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
 
- .sub__table td,
- .sub__table th {
-   position: relative;
-   box-sizing: border-box;
-   border-radius: 1px 0px 0px 0px;
- }
-
- .sub__table_back {
-   background-color: $concrete;
- }
-
- .sub__table-header {
-   background-color: $ebony-clay;
-   color: $white;
-   text-transform: uppercase;
- }
-
- .sub__table-border {
-   border: 2px solid $mercury;
- }
-
- .sub__table-border_right {
-   border-right-style: solid;
-   border-right-color: $concrete;
-   border-right-width: 2px;
- }
-
- .sub__table-border_top {
-   border-top-style: none;
- }
-
- .sub__table-price {
-   @include font(18px, 30px);
-   font-weight: 300;
- }
-
- @media screen and (max-width: $tablet-width) {
- .sub__table_mobile {
-   display: none;
- }
-
- .sub__table-header {
-   min-width: 276px;
-   min-height: 94px;
-   padding: 19px 95px 12px 95px;
- }
-
- .sub__data_tablet {
-   width: 276px;
-   height: 59px;
-   padding: 20px 20px;
-   text-align: left;
- }
-
- .sub__data_tablet::before {
-   content: attr(data-label);
-   display: block;
- }
-
- .sub__table-price {
-   display: block;
- }
-
- .sub__bonus {
-   position: absolute;
-   top: 15px;
-   right: 21px;
- }
-
- .sub__table-text {
-   text-transform: uppercase;
- }
-
- }
-
- @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
- .sub__table-header {
-   width: 152px;
-   height: 75px;
-   padding: 11px 37px 0px 36px;
- }
-
- .sub__table-price {
-   display: block;
- }
-
- .sub__data_tablet {
-   width: 152px;
-   height: 45px;
-   padding: 12px 60px;
-   text-align: center;
-   }
-
- .sub__table_tablet {
-    width: 153px;
-    height: 45px;
-    text-align: left;
-    padding: 8px 0 8px 15px;
-   }
- }
-
- @media screen and (min-width: $desktop-width) {
- .sub__table-header {
-   width: 233px;
-   height: 94px;
-   padding: 13px 67px;
- }
-
- .sub__table-price {
-   display: block;
- }
-
- .sub__data_desktop {
-   width: 234px;
-   height: 59px;
-   padding: 9px 60px;
-   text-align: center;
-   }
-
-   .sub__table_desktop {
-    width: 234px;
-    height: 59px;
-    text-align: left;
-    padding: 20px 0 19px 22px;
-   }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sub__controls {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

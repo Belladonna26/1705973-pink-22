@@ -1,21 +1,50 @@
 .promo {
-  padding-top: 30px;
-  background-image: url("../img/screen.png"), url("../img/mockup.png"), url('../img/back-mobile.png');
-  background-position: center bottom 343px, center bottom 286px, top;
+  padding-top: 21px;
+  background-image: url("../img/mockup/screen.png"), url("../img/mockup/mockup.png");
+  background-position: center bottom 306px, center bottom 249px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    row-gap: 13px;
+
+    height: 545px;
+    padding-top: 74px;
+    padding-left: 20px;
+
+    background-image: url("../img/mockup/screen-tablet.png"), url("../img/mockup/mockup-tablet.png");
+    background-position: right 93px bottom 144px, right bottom;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 180px;
+    padding-left: 130px;
+
+    background-image: url("../img/mockup/screen-desktop.png"), url("../img/mockup/mockup-desktop.png");
+    background-position: bottom 173px right 260px, bottom right 10px;
+  }
 }
 
-.promo__mobile-wrapper {
+.promo__download-buttons-wrapper {
   display: flex;
   flex-direction: column;
 
   align-items: center;
 
-  padding-top: 28px;
-  padding-bottom: 38px;
+  padding-top: 26px;
+  padding-bottom: 31px;
   box-sizing: border-box;
 
   background-color: $mirage;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .promo__download-button {
@@ -32,50 +61,59 @@
   text-decoration: none;
   color: $white;
 
-    &:hover {
-      background-color: $white;
-      color: $cerise-red;
-    }
-    &:active {
-      background-color: $white;
-      color: $cerise-red-30;
-    }
+  &:hover {
+    background-color: $white;
+    color: $cerise-red;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $cerise-red-30;
+  }
 }
 
 .promo__slogan {
-  text-align: center;
+  @include font(24px, 28px);
 
+  text-align: center;
   margin: 0 auto 320px auto;
 
-  @include font(24px, 28px);
   color: $white;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font(40px, 48px);
+
+    width: 239px;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    @include font(50px, 68px);
+
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
 }
-
-// .promo__mockup {
-//   position: relative;
-// }
-
-// .promo__mockup::after {
-//   position: absolute;
-
-//   width: 111px;
-//   height: 187px;
-//   left: 105px;
-//   top: 122px;
-
-//   content: url("../img/screen.png");
-// }
 
 .promo__buttons {
   display: flex;
   align-items: baseline;
   column-gap: 35px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .promo__available-on {
-  margin: 28px 0 0 0;
-
   @include font(14px, 24px);
 
+  margin: 0;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 24px);
+  }
 }

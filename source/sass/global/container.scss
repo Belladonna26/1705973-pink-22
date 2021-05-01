@@ -1,0 +1,11 @@
+.container {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+}

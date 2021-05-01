@@ -1,11 +1,15 @@
 .menu-toggle {
-  display: none;
-
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-.menu-toggle__show {
-  display: block;
+.menu-toggle_display {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .menu-toggle {
+    display: none;
+  }
 }

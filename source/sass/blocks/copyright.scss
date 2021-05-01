@@ -1,23 +1,29 @@
 .copyright {
   display: flex;
-  justify-content: center;
   align-items: center;
   column-gap: 15px;
 }
 
 .copyright__text {
-  margin: 0;
   @include font(14px, 18px);
+  margin: 0;
+
   font-weight: 400;
   color: $ebony-clay;
+
+  @media screen and (min-width: $desktop-width) {
+    @include font(18px, 18px);
+  }
 }
 
 .copyright__logo-icon {
   fill: $cerise-red;
-    &:hover {
-      fill: $ebony-clay;
-    }
-    &:active {
-      fill: $ebony-clay-30;
-    }
+
+  &:hover {
+    fill: $ebony-clay;
+  }
+
+  &:active {
+    fill: $ebony-clay-30;
+  }
 }

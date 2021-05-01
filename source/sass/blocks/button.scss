@@ -1,0 +1,42 @@
+.button {
+  @include font(18px, 30px);
+  min-width: 276px;
+  min-height: 59px;
+
+  margin-bottom: 46px;
+
+  background-color: $jungle-green;
+  border: 2px solid $jungle-green;
+  border-radius: 1px;
+  box-sizing: border-box;
+  outline: none;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $eucalyptus;
+    border: 2px solid $eucalyptus;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
+  &:disabled {
+    background-color: $mercury;
+    border: 2px solid $mercury;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.button:focus-visible {
+  outline: 2px solid $ebony-clay;
+  border: 2px solid $eucalyptus;
+  background-color: $eucalyptus;
+}
