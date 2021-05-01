@@ -2,21 +2,20 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width: 659px) {
-    background-image: url("../img/back-tablet.png");
-    background-position: 0 316px;
+    background-image: url("../img/back-mobile.png");
+    background-position: 0 263px;
     background-size: 100% 396px;
   }
 
   @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: url("../img/back-tablet.png");
     background-position: 0 250px;
-    background-size: contain;
   }
 
   @media screen and (min-width: $desktop-width) {
+    height: 394px;
     background-image: url("../img/back-desktop.png");
     background-position: center;
-    background-size: 100%;
   }
 }
 

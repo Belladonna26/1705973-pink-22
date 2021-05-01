@@ -16,4 +16,16 @@
 
   font-weight: 300;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    @include font(50px, 68px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 747px;
+
+    br {
+      display: none;
+    }
+  }
 }
