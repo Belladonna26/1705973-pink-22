@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-.social-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,11 +18,13 @@
   border-radius: 50%;
 
   border: 3px solid $ebony-clay-10;
-    &:hover {
-      border: 3px solid $ebony-clay;
-    }
-    &:active {
-      opacity: 0.1;
-      border: 3px solid $ebony-clay;
-    }
+
+  &:hover {
+    border: 3px solid $ebony-clay;
+  }
+
+  &:active {
+    opacity: 0.1;
+    border: 3px solid $ebony-clay;
+  }
 }

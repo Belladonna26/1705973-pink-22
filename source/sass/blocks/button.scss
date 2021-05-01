@@ -1,6 +1,5 @@
 .button {
   @include font(18px, 30px);
-  
   min-width: 276px;
   min-height: 59px;
 
@@ -17,17 +16,23 @@
   color: $white;
   cursor: pointer;
 
-    &:hover {
-      background-color: $eucalyptus;
-      border: 2px solid $eucalyptus;
-    }
-    &:active {
-      color: $white-30;
-    }
-    &:disabled {
-      background-color: $mercury;
-      border: 2px solid $mercury;
-    }
+  &:hover {
+    background-color: $eucalyptus;
+    border: 2px solid $eucalyptus;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
+  &:disabled {
+    background-color: $mercury;
+    border: 2px solid $mercury;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .button:focus-visible {

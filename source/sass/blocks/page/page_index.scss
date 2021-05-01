@@ -1,5 +1,9 @@
 .page_index .page__advantages {
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page_index .page__testimonials {
@@ -8,5 +12,16 @@
 
 .page_index .page__offer {
   margin-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 152px;
+  }
 }
 
+.page_index .page__effect {
+  margin-bottom: 109px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}

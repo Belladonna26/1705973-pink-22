@@ -3,6 +3,10 @@
   column-gap: 19px;
   align-items: baseline;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .slider-control {
@@ -16,13 +20,15 @@
   outline: none;
 
   background-color: $ebony-clay-30;
-    &:hover {
-      background-color: $ebony-clay-60;
-    }
-    &:active {
-      background-color: $ebony-clay-10;
-    }
-    cursor: pointer;
+
+  &:hover {
+    background-color: $ebony-clay-60;
+  }
+
+  &:active {
+    background-color: $ebony-clay-10;
+  }
+  cursor: pointer;
 }
 
 .slider-control_current {
@@ -33,10 +39,12 @@
 
   border: 2px solid $ebony-clay;
   background-color: $white;
-    &:hover {
-      background-color: $white;
-    }
-    &:active {
-      background-color: $white;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
   }
 }
