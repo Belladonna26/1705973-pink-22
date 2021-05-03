@@ -32,10 +32,6 @@
   list-style: none;
 }
 
-.fieldset__item:not(:last-child) {
-  margin-bottom: 47px;
-}
-
 .fieldset_colored {
   background-color: $concrete;
 

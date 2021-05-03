@@ -83,7 +83,7 @@
         <fieldset class="fieldset fieldset_colored competition__achievements">
           <legend class="fieldset__title">Ваши безбашенные<br> достижения в путешествии</legend>
           <ul class="fieldset__list">
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="selfie" name="achievements"
                   checked>
@@ -94,7 +94,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="suntan" name="achievements"
                   checked>
@@ -105,7 +105,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="celebrity"
                   name="achievements">
@@ -116,7 +116,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="gifts" name="achievements">
                 <label class="input-checkbox__label-wrapper" for="gifts">
@@ -126,7 +126,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="tower-holder"
                   name="achievements" checked>
@@ -137,7 +137,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__achievements-item">
               <div class="input-checkbox">
                 <input class="input-checkbox__control visually-hidden" type="checkbox" id="destroying"
                   name="achievements">
@@ -150,24 +150,23 @@
           </ul>
         </fieldset>
 
-        <fieldset class="fieldset competition__contact">
+        <fieldset class="fieldset competition__contact competition__contact_flex">
           <legend class="fieldset__title fieldset__title_display">Контактная информация</legend>
-          <div class="fieldset__field">
+          <div class="fieldset__field addon-tel">
             <label class="info-label competition__contact-label" for="tel">Номер телефона</label>
             <input class="input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
           </div>
 
-          <div class="fieldset__field">
+          <div class="fieldset__field addon-mail">
             <label class="info-label competition__contact-label" for="email">Адрес почты</label>
             <input class="input" type="email" id="email" name="email" placeholder="Введите почту *" required>
           </div>
         </fieldset>
 
-        <!-- TODO position-->
         <fieldset class="fieldset fieldset_colored competition__travel">
           <legend class="fieldset__title competition__travel-title">С каким приложением путешествовали?</legend>
           <ul class="fieldset__list">
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__travel-item">
               <div class="input-radio">
                 <input class="input-radio__control visually-hidden" type="radio" id="iOS" name="OS" checked>
                 <label class="input-radio__label-wrapper" for="iOS">
@@ -177,7 +176,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__travel-item">
               <div class="input-radio">
                 <input class="input-radio__control visually-hidden" type="radio" id="Android" name="OS">
                 <label class="input-radio__label-wrapper" for="Android">
@@ -187,7 +186,7 @@
               </div>
             </li>
 
-            <li class="fieldset__item">
+            <li class="fieldset__item competition__travel-item">
               <div class="input-radio">
                 <input class="input-radio__control visually-hidden" type="radio" id="Windows" name="OS">
                 <label class="input-radio__label-wrapper" for="Windows">
@@ -199,11 +198,10 @@
           </ul>
         </fieldset>
 
-        <!-- TODO placeholder -->
         <fieldset class="fieldset competition__review">
           <legend class="fieldset__title competition__review-title">Опишите свои эмоции</legend>
           <textarea class="input input_modified" name="review"
-            id="review-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+            id="review-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <div class="competition__submit">

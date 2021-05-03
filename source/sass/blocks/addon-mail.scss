@@ -1,0 +1,34 @@
+.addon-mail {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 59px;
+    height: 59px;
+
+    background-color: $mercury;
+    content: "";
+
+    @media (max-width: 659px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 23px;
+    right: -20px;
+    width: 59px;
+    height: 59px;
+
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+
+    @media (max-width: 659px) {
+      display: none;
+    }
+  }
+}
