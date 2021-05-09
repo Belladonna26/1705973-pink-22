@@ -1,8 +1,7 @@
-.button-wrapper {
-  padding: 0;
+@import "button/mixins.scss";
 
-  border: none;
-  background-color: transparent;
+.button-wrapper {
+  @include button();
 }
 
 .button-wrapper img {

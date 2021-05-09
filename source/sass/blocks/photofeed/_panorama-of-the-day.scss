@@ -1,4 +1,4 @@
-@import '../../global/variables.scss';
+@import "../../global/variables.scss";
 
 .photofeed_panorama-of-the-day .photofeed__image {
   width: calc(100% + #{$container-mobile-padding} * 2);

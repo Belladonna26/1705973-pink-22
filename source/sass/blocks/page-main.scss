@@ -1,3 +1,6 @@
+@import "../global/variables.scss";
+@import "../global/media-queries.scss";
+
 .page-main__introduction {
   display: flex;
   justify-content: center;
@@ -15,5 +18,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 97px 0;
+  }
+}
+
+.page-main__photo-editor {
+  @media #{$mq-desktop} {
+    padding: 0 $container-desktop-padding;
   }
 }

@@ -14,6 +14,7 @@ $mirage: #1d2631;
 $mercury: #e5e5e5;
 $jungle-green: #2aab6d;
 $eucalyptus: #1c9b5e;
+$cornflower-blue-50: rgba(cornflowerblue, 0.5);
 
 // Viewports
 $tablet-width: 660px;
@@ -29,3 +30,9 @@ $container-desktop-padding: 130px;
   font-size: $font-size;
   line-height: $line-height;
 }
+
+// Times
+$time-microinteraction: 250ms;
+
+// Z-index Layers
+$z-index-layer-1: 1000;
