@@ -1,0 +1,19 @@
+.page-main__introduction {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 60px;
+  padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0 0 85px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 97px 0;
+  }
+}

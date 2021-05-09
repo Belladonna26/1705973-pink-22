@@ -1,0 +1,24 @@
+.introduction {
+  @include font(14px, 30px);
+
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  color: $ebony-clay;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 30px);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 446px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+  }
+}
