@@ -1,3 +1,6 @@
+@import "../../global/variables.scss";
+@import "_panorama-of-the-day.scss";
+
 .photofeed {
   margin-bottom: 20px;
 
@@ -5,48 +8,62 @@
     margin-bottom: 0;
   }
 
-  &_panorama-of-the-day & {
-    &__image {
-      width: calc($mobile-width + $container-mobile-width * 2);
-      margin: 0 -$container-mobile-width;
-    }
-  }
-
   @media (max-width: $tablet-width) {
     width: 100%;
   }
 }
 
-.photofeed__image {
+.photofeed__image-wrapper {
+  position: relative;
+
   display: block;
+
+  height: 0;
+  padding-top: calc(100% / (280 / 180));
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-top: 0;
+  }
 }
 
-.photofeed__comment,
-.photofeed__like {
-  background-color: $concrete;
+.photofeed__image {
+  position: absolute;
+  top: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .photofeed__comment {
+  margin: 0;
   padding: 25px 10px 25px 17px;
 
+  background-color: $concrete;
+
   @media (min-width: $tablet-width) {
-    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     box-sizing: border-box;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: 300px;
+    min-height: 155px;
+    padding: 30px;
   }
 }
 
-.photofeed__subtitle {
-  margin-top: 0;
+.photofeed__comment-header {
+  margin-bottom: 14px;
 }
 
-.photofeed__subtitle_margin {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin: 0;
-  }
+.photofeed__comment-footer {
+  margin-top: auto;
 }
 
 .photofeed__author,
@@ -70,11 +87,11 @@
 .photofeed__text {
   @include font(14px, 24px);
 
-  margin: 14px 0 23px 0;
+  margin: 0;
   font-weight: 400;
 }
 
-.photofeed__like {
+.photofeed__comment-footer {
   display: flex;
   align-items: baseline;
   column-gap: 18px;
@@ -89,3 +106,4 @@
   text-transform: uppercase;
   color: $cerise-red;
 }
+

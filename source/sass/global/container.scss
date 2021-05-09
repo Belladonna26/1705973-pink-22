@@ -1,16 +1,13 @@
+@import "variables.scss";
+
 .container {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding-right: 22px;
-    padding-left: 22px;
+  padding: 0 $container-mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $container-tablet-padding;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 130px;
-    padding-left: 130px;
+    padding: 0 $container-desktop-padding;
   }
-}
-
-.container_photos {
-  padding-left: 20px;
-  padding-right: 20px;
 }

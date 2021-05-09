@@ -21,6 +21,10 @@ $desktop-width: 1200px;
 $mobile-width: 320px;
 // Viewports end
 
+$container-mobile-padding: 20px;
+$container-tablet-padding: $container-mobile-padding;
+$container-desktop-padding: 130px;
+
 @mixin font($font-size: 14px, $line-height: 14px) {
   font-size: $font-size;
   line-height: $line-height;

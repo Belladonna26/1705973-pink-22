@@ -48,7 +48,6 @@
             <a class="main-navigation__link" href="https://htmlacademy.ru/study">HTML Academy</a>
           </li>
         </ul>
-      </div>
     </nav>
 
     <div class="top-background">
@@ -60,144 +59,179 @@
     <div class="page-main__introduction ">
       <p class="introduction">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
     </div>
-  <div class="photos">
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/panorama.jpg" width="320" height="137" alt="Панорамный вид">
-        </a>
-        <div class="container_photos">
-          <div class="photofeed__comment photofeed__comment_modified">
-            <p class="photofeed__subtitle photofeed__subtitle_margin">
-              <span class="photofeed__author">Анна</span>
-              <span class="photofeed__time">(5 минут назад)</span>
-            </p>
-            <p class="photofeed__text photofeed__text_grid">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+  <div class="photos container">
 
-            <div class="photofeed__like">
-              <button class="button-like" type="button" aria-label="Нравится">
-                <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-              </button>
-              <p class="photofeed__like-count">Нравится: 215</p>
-            </div>
-          </div>
-        </div>
-      </article>
+    <article class="photofeed photofeed_panorama-of-the-day photos__panorama-of-the-day">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <img class="photofeed__image" src="img/photos/panorama/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамный вид">
+      </a>
+        <blockquote class="photofeed__comment">
+          <header class="photofeed__subtitle photofeed__subtitle_margin">
+            <span class="photofeed__author">Анна</span>
+            <span class="photofeed__time">(5 минут назад)</span>
+          </header>
 
-      <div class="container_photos">
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/car-street.jpg" width="280" height="180" alt="Штатив, обращенный на стоящий вдали автомобиль">
-        </a>
-        <div class="photofeed__comment">
-          <span class="photofeed__author">Левон</span>
-          <span class="photofeed__time">(5 часов назад)</span>
-          <p class="photofeed__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photofeed__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
-              <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-            </button>
-            <p class="photofeed__like-count">Нравится: 356</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/drums.jpg" width="280" height="180" alt="Барабанная установка">
-        </a>
-        <div class="photofeed__comment">
-          <span class="photofeed__author">Антон</span>
-          <span class="photofeed__time">(12 часов назад)</span>
-          <p class="photofeed__text">Соседи будут рады!</p>
-
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
-              <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-            </button>
-            <p class="photofeed__like-count">Нравится: 666</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/glass-ceiling.jpg" width="280" height="180" alt="Стеклянный потолок">
-        </a>
-        <div class="photofeed__comment">
-          <span class="photofeed__author">Борис</span>
-          <span class="photofeed__time">(20 часов назад)</span>
-          <p class="photofeed__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
+          <footer class="photofeed__comment-footer">
+            <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
               <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
             </button>
             <p class="photofeed__like-count">Нравится: 215</p>
-          </div>
-        </div>
-      </article>
+          </footer>
+        </blockquote>
+    </article>
 
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/kuban-melon.jpg" width="280" height="180" alt="Кубанская бахча">
-        </a>
-        <div class="photofeed__comment">
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <picture>
+          <!-- <source srcset="iimg/photos/car-street/car-street-desktop@1x.webp, img/photos/car-street/car-street-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1280px)">
+          <source srcset="iimg/photos/car-street/car-street-tablet@1x.webp, iimg/photos/car-street/car-street-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+          <source srcset="img/photos/car-street/car-street-mobile@1x.webp, img/photos/car-street/car-street-mobile@2x.webp 2x" type="image/webp"> -->
+
+          <source srcset="img/photos/car-street/car-street-desktop@1x.jpg, img/photos/car-street/car-street-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="img/photos/car-street/car-street-tablet@1x.jpg, img/photos/car-street/car-street-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <source srcset="img/photos/car-street/car-street-mobile@1x.jpg, img/photos/car-street/car-street-mobile@2x.jpg 2x">
+
+          <img class="photofeed__image" src="img/photos/car-street/car-street-mobile@1x.jpg" width="280" height="180" alt="Штатив, обращенный на стоящий вдали автомобиль">
+        </picture>
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
+          <span class="photofeed__author">Левон</span>
+          <span class="photofeed__time">(5 часов назад)</span>
+        </header>
+        <p class="photofeed__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <span class="photofeed__like-count">Нравится: 356</span>
+        </div>
+      </blockquote>
+    </article>
+
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <img class="photofeed__image" src="img/photos/drums/drums-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
+          <span class="photofeed__author">Антон</span>
+          <span class="photofeed__time">(12 часов назад)</span>
+        </header>
+
+        <p class="photofeed__text">Соседи будут рады!</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <p class="photofeed__like-count">Нравится: 666</p>
+        </div>
+      </blockquote>
+    </article>
+
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <img class="photofeed__image" src="img/photos/glass-ceiling/glass-ceiling-mobile@1x.jpg" width="280" height="180" alt="Стеклянный потолок">
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
+          <span class="photofeed__author">Борис</span>
+          <span class="photofeed__time">(20 часов назад)</span>
+        </header>
+
+        <p class="photofeed__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <p class="photofeed__like-count">Нравится: 215</p>
+        </div>
+      </blockquote>
+    </article>
+
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <img class="photofeed__image" src="img/photos/kuban-melon/kuban-melon-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
           <span class="photofeed__author">Сергей</span>
           <span class="photofeed__time">(25 часов назад)</span>
-          <p class="photofeed__text">Самая кубанская в мире!</p>
+        </header>
 
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
-              <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-            </button>
-            <p class="photofeed__like-count">Нравится: 4</p>
-          </div>
+        <p class="photofeed__text">Самая кубанская в мире!</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <p class="photofeed__like-count">Нравится: 4</p>
         </div>
-      </article>
+      </blockquote>
+    </article>
 
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/from-above.jpg" width="280" height="180" alt="Вид сверху с горы">
-        </a>
-        <div class="photofeed__comment">
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <img class="photofeed__image" src="img/photos/from-above/from-above-mobile@1x.jpg" width="280" height="180" alt="Вид сверху с горы">
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
           <span class="photofeed__author">Максим</span>
           <span class="photofeed__time">(40 часов назад)</span>
-          <p class="photofeed__text">Где снег-то?</p>
+        </header>
 
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
-              <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-            </button>
-            <p class="photofeed__like-count">Нравится: 150</p>
-          </div>
+        <p class="photofeed__text">Где снег-то?</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <p class="photofeed__like-count">Нравится: 150</p>
         </div>
-      </article>
+      </blockquote>
+    </article>
 
-      <article class="photofeed">
-        <a href="#" aria-label="Полноразмерное изображение">
-          <img class="photofeed__image" src="img/photos/airplane.jpg" width="280" height="180" alt="Самолет среди облаков">
-        </a>
-        <div class="photofeed__comment">
+    <article class="photofeed">
+      <a class="photofeed__image-wrapper" href="#" aria-label="Полноразмерное изображение">
+        <picture>
+          <!-- <source srcset="iimg/photos/airplane/airplane-desktop@1x.webp, img/photos/airplane/airplane-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1280px)">
+          <source srcset="iimg/photos/airplane/airplane-tablet@1x.webp, iimg/photos/airplane/airplane-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+          <source srcset="img/photos/airplane/airplane-mobile@1x.webp, img/photos/airplane/airplane-mobile@2x.webp 2x" type="image/webp"> -->
+
+          <source srcset="iimg/photos/airplane/airplane-desktop@1x.jpg, img/photos/airplane/airplane-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="img/photos/airplane/airplane-tablet@1x.jpg, img/photos/airplane/airplane-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <source srcset="img/photos/airplane/airplane-mobile@1x.jpg, img/photos/airplane/airplane-mobile@2x.jpg 2x">
+
+          <img class="photofeed__image" src="img/photos/airplane/airplane-mobile@1x.jpg" width="280" height="180" alt="Самолет среди облаков">
+        </picture>
+      </a>
+      <blockquote class="photofeed__comment">
+        <header class="photofeed__comment-header">
           <span class="photofeed__author">Надежда</span>
           <span class="photofeed__time">(45 часов назад)</span>
-          <p class="photofeed__text">Всем GM и взаимные лайки!</p>
+        </header>
 
-          <div class="photofeed__like">
-            <button class="button-like" type="button" aria-label="Нравится">
-              <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
-            </button>
-            <p class="photofeed__like-count">Нравится: 2560</p>
-          </div>
+        <p class="photofeed__text">Всем GM и взаимные лайки!</p>
+
+        <div class="photofeed__comment-footer">
+          <button class="button-wrapper photofeed__like-button" type="button" aria-label="Нравится">
+            <img src="img/photos/heart.svg" width="13" height="12" alt="Иконка like">
+          </button>
+          <p class="photofeed__like-count">Нравится: 2560</p>
         </div>
-      </article>
-    </div>
+      </blockquote>
+    </article>
   </div>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр фото</h2>
       <p class="filter__introduction introduction">Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!</p>
-      <form class="filter__photo container_photos" action="https://echo.htmlacademy.ru">
+      <form class="filter__photo" action="https://echo.htmlacademy.ru">
         <img class="filter__image" src="img/photos/winter.jpg" width="280" height="374" alt="Заснеженная дорога">
 
       <div class="filter__controls">
