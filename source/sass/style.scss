@@ -8,7 +8,7 @@
 @import "blocks/main-navigation.scss";
 @import "blocks/menu-toggle.scss";
 @import "blocks/promo.scss";
-@import "blocks/button-rounded.scss";
+@import "blocks/button-rounded/button-rounded.scss";
 @import "blocks/offer.scss";
 @import "blocks/advantages.scss";
 @import "blocks/effect.scss";
@@ -30,7 +30,7 @@
 @import "blocks/input-checkbox.scss";
 @import "blocks/input-radio.scss";
 @import "blocks/margin-off.scss";
-@import "blocks/button.scss";
+@import "blocks/button/button.scss";
 @import "blocks/star.scss";
 @import "blocks/sliced-back.scss";
 @import "blocks/tariffs.scss";
@@ -38,6 +38,7 @@
 @import "blocks/photofeed/photofeed.scss";
 @import "blocks/button-wrapper.scss";
 @import "blocks/filter.scss";
+@import "blocks/photo-editor/photo-editor.scss";
 @import "blocks/introduction.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button-post.scss";

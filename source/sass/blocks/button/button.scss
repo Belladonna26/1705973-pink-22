@@ -1,5 +1,9 @@
+@import "mixins.scss";
+
 .button {
   @include font(18px, 30px);
+  @include button();
+
   min-width: 276px;
   min-height: 59px;
 
@@ -9,12 +13,10 @@
   border: 2px solid $jungle-green;
   border-radius: 1px;
   box-sizing: border-box;
-  outline: none;
 
   font-weight: 700;
   text-transform: uppercase;
   color: $white;
-  cursor: pointer;
 
   &:hover {
     background-color: $eucalyptus;
@@ -30,13 +32,12 @@
     border: 2px solid $mercury;
   }
 
+  &:focus-visible {
+    border: 2px solid $eucalyptus;
+    background-color: $eucalyptus;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
-}
-
-.button:focus-visible {
-  outline: 2px solid $ebony-clay;
-  border: 2px solid $eucalyptus;
-  background-color: $eucalyptus;
 }
