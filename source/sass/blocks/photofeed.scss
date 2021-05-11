@@ -1,10 +1,4 @@
 .photofeed {
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &_panorama-of-the-day & {
     &__image {
       width: calc($mobile-width + $container-mobile-width * 2);
@@ -14,6 +8,12 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+  }
+}
+
+.photofeed_width {
+  @media (min-width: $desktop-width) {
+    width: 300px;
   }
 }
 

@@ -3,6 +3,11 @@
 .photofeed_panorama-of-the-day .photofeed__image {
   width: calc(100% + #{$container-mobile-padding} * 2);
   margin-left: -#{$container-mobile-padding};
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + #{$container-desktop-padding} * 2);
+    margin-left: -#{$container-desktop-padding};
+  }
 }
 
 .photofeed_panorama-of-the-day .photofeed__comment {
