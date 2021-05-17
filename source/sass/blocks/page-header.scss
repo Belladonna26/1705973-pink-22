@@ -1,7 +1,9 @@
+@import "../global/media-queries.scss";
+
 .page-header {
   background-repeat: no-repeat;
 
-  @media screen and (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     background-image: url("../img/back/back-mobile.png");
     background-position: 0 247px;
     background-size: 100%;
@@ -11,20 +13,20 @@
     }
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/back/back-tablet.png");
     background-position: 0 250px;
-    background-size: 100% ;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back/back-tablet@2x.png");
     }
   }
 
-  @media screen and (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     background-image: url("../img/back/back-desktop.png");
     background-position: 0 0;
-    background-size: 100% ;
+    background-size: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back/back-desktop@2x.png");
@@ -34,9 +36,7 @@
 
 .page-header__logo {
   cursor: pointer;
-}
 
-.page-header__logo-icon {
   fill: $white;
 
   &:hover {
@@ -45,5 +45,29 @@
 
   &:active {
     fill: $white-30;
+  }
+}
+
+.page-header__logo-letters {
+  display: none;
+
+  @media #{$mq-mobile-only} {
+    display: block;
+  }
+}
+
+.page-header__logo-glasses {
+  display: none;
+
+  @media #{$mq-tablet-only} {
+    display: block;
+  }
+}
+
+.page-header__logo-stars {
+  display: none;
+
+  @media #{$mq-desktop} {
+    display: block;
   }
 }

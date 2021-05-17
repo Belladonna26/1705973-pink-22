@@ -1,4 +1,5 @@
 @import "../../global/variables.scss";
+@import "../../global/media-queries.scss";
 @import "_panorama-of-the-day.scss";
 
 .photofeed {
@@ -20,6 +21,7 @@
 
   height: 0;
   padding-top: calc(100% / (280 / 180));
+  background-color: $ebony-clay-10;
 
   @media (min-width: $tablet-width) {
     height: auto;
@@ -59,11 +61,8 @@
 }
 
 .photofeed__comment-header {
+  height: 10px;
   margin-bottom: 14px;
-}
-
-.photofeed__comment-footer {
-  margin-top: auto;
 }
 
 .photofeed__author,
@@ -87,7 +86,7 @@
 .photofeed__text {
   @include font(14px, 24px);
 
-  margin: 0;
+  margin: 0 0 auto 0;
   font-weight: 400;
 }
 
