@@ -1,7 +1,9 @@
+@import "global/media-queries.scss";
+
 .promo {
   padding-top: 21px;
   background-image: url("../img/mockup/screen.png"), url("../img/mockup/mockup.png");
-  background-position: center bottom 306px, center bottom 249px;
+  background-position: center bottom 336px, center bottom 279px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -12,7 +14,7 @@
     padding-left: 20px;
 
     background-image: url("../img/mockup/screen-tablet.png"), url("../img/mockup/mockup-tablet.png");
-    background-position: right 93px bottom 144px, right bottom;
+    background-position: right 93px bottom 145px, right bottom;
   }
 
   @media (min-width: $tablet-width) {
@@ -22,11 +24,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 180px;
+    height: 644px;
+    padding-top: 98px;
     padding-left: 130px;
 
     background-image: url("../img/mockup/screen-desktop.png"), url("../img/mockup/mockup-desktop.png");
-    background-position: bottom 173px right 260px, bottom right 10px;
+    background-position: bottom 170px right 260px, bottom 0px right 10px;
   }
 }
 
@@ -44,6 +47,20 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+  }
+}
+
+.promo__download-button-rounded {
+  @media (min-width: $mobile-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -76,7 +93,7 @@
   @include font(24px, 28px);
 
   text-align: center;
-  margin: 0 auto 320px auto;
+  margin: 0 auto 315px auto;
 
   color: $white;
 
@@ -100,10 +117,17 @@
   display: flex;
   align-items: baseline;
   column-gap: 35px;
-  margin-bottom: 0;
+
+  @media #{$mq-mobile-only} {
+    margin-bottom: 28px;
+  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
   }
 }
 

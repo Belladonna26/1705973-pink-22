@@ -1,0 +1,7 @@
+@import "../../global/media-queries.scss";
+
+.page_photos .page-header {
+  @media #{$mq-tablet-only} {
+    height: 440px;
+  }
+}

@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
 
   @media (max-width: $tablet-width) {
+    height: 240px;
     background-image: url("../img/back/back-mobile.png");
-    background-position: 0 247px;
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
@@ -15,7 +15,6 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back/back-tablet.png");
-    background-position: 0 250px;
     background-size: 100%;
 
     @media (min-resolution: 2dppx) {
@@ -34,40 +33,3 @@
   }
 }
 
-.page-header__logo {
-  cursor: pointer;
-
-  fill: $white;
-
-  &:hover {
-    fill: $cerise-red;
-  }
-
-  &:active {
-    fill: $white-30;
-  }
-}
-
-.page-header__logo-letters {
-  display: none;
-
-  @media #{$mq-mobile-only} {
-    display: block;
-  }
-}
-
-.page-header__logo-glasses {
-  display: none;
-
-  @media #{$mq-tablet-only} {
-    display: block;
-  }
-}
-
-.page-header__logo-stars {
-  display: none;
-
-  @media #{$mq-desktop} {
-    display: block;
-  }
-}

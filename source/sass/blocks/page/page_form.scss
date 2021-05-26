@@ -1,0 +1,13 @@
+@import "../../global/media-queries.scss";
+
+.page_form .page-header {
+
+
+  @media #{$mq-tablet-only} {
+    height: 440px;
+  }
+
+  @media #{$mq-mobile-only} {
+    height: 240px;
+  }
+}

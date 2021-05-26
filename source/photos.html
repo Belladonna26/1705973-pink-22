@@ -79,8 +79,17 @@
     <nav class="main-navigation">
       <h2 class="visually-hidden">Пользовательская навигация</h2>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-            <a class="page-header__logo" aria-label="Главная страница">
+        <li class="main-navigation__item main-navigation__item_main">
+          <a class="main-navigation-logo" href="index.html" aria-label="Главная страница">
+            <picture class="main-navigation-logo__picture">
+              <source srcset="img/blocks/main-navigation/main-navigation-logo/logo-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/blocks/main-navigation/main-navigation-logo/logo-tablet.svg" media="(min-width: 660px)">
+              <source srcset="img/blocks/main-navigation/main-navigation-logo/logo-mobile.svg">
+
+              <img class="main-navigation-logo__image" src="img/blocks/main-navigation/main-navigation-logo/logo-mobile.svg" width="74" height="23" alt="Pink">
+            </picture>
+          </a>
+            <!-- <a class="page-header__logo" aria-label="Главная страница">
               <svg class="page-header__logo-stars" width="147" height="40">
                 <use href="#header-stars"></use>
               </svg>
@@ -90,11 +99,10 @@
               <svg class="page-header__logo-letters" width="74" height="23">
                 <use href="#header-letters"></use>
               </svg>
-          </a>
-          <!-- Класс menu-toggle_display отвечает за отображение кнопки-бургера и кнопки-закрытия -->
-          <button class="menu-toggle" type="button" aria-label="Открыть меню">
-            <img class="menu-toggle_display" src="img/menu-burger.svg" width="50" height="24" alt="Меню">
-            <img class="menu-toggle_display" src="img/close-icon.svg" width="23" height="23" alt="Иконка закрыть">
+          </a> -->
+          <!-- Класс menu-toggle отвечает за отображение кнопки-бургера и кнопки-закрытия -->
+          <button class="main-navigation-toggle-button main-navigation__item-main-navigation-toggle-button" type="button" aria-label="Открыть меню">
+            <span class="main-navigation-toggle-button__icon"></span>
           </button>
         </li>
           <li class="main-navigation__item">
@@ -481,6 +489,7 @@
 
   <footer class="page-footer">
     <div class="page__footer-inner">
+      <!-- Привести к тому же решению что и в main-navigation-logo -->
       <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Главная страница">
         <svg class="logo-with-stars" width="147" height="40">
           <style>
@@ -562,6 +571,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/main-navigation-toggle-button.js"></script>
+  <script src="js/main-navigation.js"></script>
 </body>
 
 </html>

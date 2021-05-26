@@ -3,10 +3,11 @@
 @import "global/visually-hidden.scss";
 @import "global/container.scss";
 @import "blocks/page/page.scss";
-@import "blocks/page/page_index.scss";
 @import "blocks/page-header.scss";
-@import "blocks/main-navigation.scss";
-@import "blocks/menu-toggle.scss";
+@import "blocks/page/page_index.scss";
+@import "blocks/page/page_form.scss";
+@import "blocks/page/page_photos.scss";
+@import "blocks/main-navigation/main-navigation.scss";
 @import "blocks/promo.scss";
 @import "blocks/button-rounded/button-rounded.scss";
 @import "blocks/offer.scss";

@@ -11,3 +11,10 @@
     padding: 0 $container-desktop-padding;
   }
 }
+
+.container_no-padding {
+  @media (min-width: $mobile-width) and (max-width: 659px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
