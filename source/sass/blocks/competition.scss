@@ -81,9 +81,14 @@
 
 .competition__achievements .fieldset__list {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.competition__achievements .fieldset__item:nth-last-child(-n+3) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
